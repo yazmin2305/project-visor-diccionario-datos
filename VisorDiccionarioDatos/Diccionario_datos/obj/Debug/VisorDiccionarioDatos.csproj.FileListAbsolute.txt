@@ -1,0 +1,12 @@
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\bin\Debug\Diccionario_datos.exe.config
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\bin\Debug\Diccionario_datos.exe
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\bin\Debug\Diccionario_datos.pdb
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\VisorDiccionarioDatos.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\Diccionario_datos.Form1.resources
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\Diccionario_datos.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\VisorDiccionarioDatos.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\VisorDiccionarioDatos.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\VisorDiccionarioDatos.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\Diccionario_datos.exe
+C:\Users\Lenovo\source\repos\AppGestionarDiccionario - copia\Diccionario_datos\obj\Debug\Diccionario_datos.pdb

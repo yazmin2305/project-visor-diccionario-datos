@@ -1,0 +1,50 @@
+Integrantes:
+--Erika Lucia Camacho Dorado
+--Yazmin Viviana Gutierrez Sarria
+
+--Procedimiento Almacenado que permite conocer para el usuario actual, el número de
+--Triggers que hay, de acuerdo al tipo de trigger.
+---Procedimiento almacenado
+
+create or replace procedure prcNumeroTriggers(cur_cantidadTriggers out SYS_REFCURSOR)
+is
+begin
+	open cur_cantidadTriggers for
+		select trigger_type as "Tipo de triggers", count(trigger_name) as "Numero de triggers"
+        from user_triggers
+        group by trigger_type
+        order by trigger_type;
+end prcNumeroTriggers;
+
+--Procedimiento almacenado que permite listar información sobre los triggers del usuario
+--actual. Específicamente y en el orden indicado los siguientes campos: nombre del trigger,
+--evento que dispara el trigger, nombre tabla que afecta el trigger, estado del trigger y
+--descripción.
+
+create or replace procedure prcInfoTriggers(cur_InfoTriggers out SYS_REFCURSOR)
+is
+begin
+	open cur_InfoTriggers for
+		select trigger_name as "Nombre", triggering_event "Evento", table_name "Tabla", status "Estado", description "Descripción"
+        from user_triggers;
+end prcInfoTriggers;
+
+
+--Solicite al usuario el ingreso del nombre de una tabla, cuyo campo será recibido en un
+--textbox. Luego, a través de un procedimiento almacenado, muestre específicamente lo
+--siguiente: cuántas columnas aceptan nulos y cuántas columnas no aceptan nulos para dicha
+--tabla. Se visualizará en un único gráfico tipo barras.
+
+create or replace procedure prcConteoColumnasNulas(v_nombreTabla varchar2, v_NumNoNulos out  int, v_NumNulos out  int)
+is
+begin
+    select count(column_name) 
+    into v_NumNoNulos
+    from user_tab_columns 
+    where table_name = v_nombreTabla and NULLABLE = 'N';
+
+    select count(column_name) 
+    into v_NumNulos
+    from user_tab_columns 
+    where table_name = v_nombreTabla and NULLABLE = 'Y';
+end prcConteoColumnasNulas;
